@@ -1,5 +1,8 @@
 let passIcon = document.getElementById("passIcon");
 let passwordField = document.getElementById("password");
+let emailField = document.getElementById("email");
+let loginButton = document.getElementById("login");
+let notifyLogin = document.getElementById("notifyLogin");
 
 passIcon.addEventListener("click", function () {
   if (passIcon.classList.contains("fa-lock")) {
@@ -15,4 +18,19 @@ passIcon.addEventListener("click", function () {
   } else {
     console.log("Error");
   }
+});
+
+loginButton.addEventListener("click", function () {
+  notifyLogin.classList.remove("hidden");
+  notifyLogin.classList.add("fade-in");
+
+  setTimeout(function () {
+    notifyLogin.classList.remove("fade-in");
+    notifyLogin.classList.add("fade-out");
+  }, 3000);
+
+  setTimeout(function () {
+    notifyLogin.classList.add("hidden");
+    notifyLogin.classList.remove("fade-out");
+  }, 3500);
 });

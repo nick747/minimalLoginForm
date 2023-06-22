@@ -63,7 +63,8 @@ button {
   border-color: #007bff;
 }
 
-#passIcon {
+#passIcon,
+#conPassIcon {
   cursor: pointer;
 }
 
@@ -91,12 +92,37 @@ button:hover {
   justify-content: space-around;
 }
 
-.help h3 {
+a {
+  text-decoration: none;
   cursor: pointer;
   color: rgba(20, 20, 20, 0.25);
   transition: all 0.3s ease;
 }
 
-.help h3:hover {
+a:hover {
   color: #202020;
+}
+
+.notify {
+  background-color: #202020;
+  padding: 10px;
+  text-align: center;
+}
+
+.notify label {
+  color: white;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  display: none;
 }

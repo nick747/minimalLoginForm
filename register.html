@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Form</title>
+    <title>Register Form</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="form">
-      <h1>Login</h1>
+      <h1>Register</h1>
       <div class="input">
         <label for="email"
           ><i class="fa fa-envelope-o" aria-hidden="true" id="emailIcon"></i
@@ -41,18 +41,27 @@
           placeholder="Password"
         />
       </div>
-      <button id="login">L O G I N</button>
+      <div class="input">
+        <label for="confirmPassword"
+          ><i class="fa fa-lock" aria-hidden="true" id="conPassIcon"></i
+        ></label>
+
+        <input
+          type="confirmPassword"
+          name="confirmPassword"
+          id="confirmPassword"
+          required
+          placeholder="Confirm Password"
+        />
+      </div>
+      <button id="register">R E G I S T E R</button>
       <div class="help">
-        <h3 id="forgotPassword">
-          <a href="#">Forgot Password</a>
-          <!-- add a link here to create a forgot-password page -->
-        </h3>
-        <h3><a href="./register.html">Register</a></h3>
+        <h3><a href="./index.html">Login</a></h3>
       </div>
     </div>
-    <div id="notifyLogin" class="notify hidden">
-      <label>Logged-In!</label>
+    <div id="notifyRegister" class="notify hidden">
+      <label>Registered!</label>
     </div>
-    <script src="./js/login.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
